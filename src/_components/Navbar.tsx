@@ -3,12 +3,14 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   return (
-    <nav className="w-full relative flex items-center justify-between max-w-2xl mx-auto px-4 py-5">
+    <nav className="w-full my-20 flex items-center relative justify-between max-w-2xl mx-auto px-4 sm:px-8">
       <Link href="/" className="font-bold text-3xl">
-        Marvix<span className="text-primary">Blog</span>
+        Marvix<span className="text-blue-500">Blog</span>
       </Link>
 
-      <ModeToggle />
+      <div className="ml-auto">
+        <ModeToggle />
+      </div>
     </nav>
   );
 }

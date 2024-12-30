@@ -1,5 +1,3 @@
-import { off, title } from "process";
-
 export default {
     name: 'blog',
     type: 'document',
@@ -24,7 +22,7 @@ export default {
             title: 'Title Image'
         },
         {
-            name: 'snallDesc',
+            name: 'smallDescription',
             type: 'text',
             title: 'Small Description'
         },
