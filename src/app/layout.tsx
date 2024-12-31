@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import { ThemeProvider } from "./components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { ClerkProvider } from "@clerk/nextjs";
+import Footer from "./components/Footer";
 
 
 const geistSans = localFont({
@@ -43,6 +44,7 @@ export default function RootLayout({
           >
         <Header />
         {children}
+        <Footer />
         <Toaster />
         </ThemeProvider>
         </main>

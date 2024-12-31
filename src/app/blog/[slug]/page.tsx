@@ -48,7 +48,7 @@ export default async function BlogArticle({
           className="rounded-md mt-8 border mx-auto w-full sm:w-[800px]" // Full width on mobile, fixed width on larger screens
         />
 
-        <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
+        <div className="mt-20 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
           <PortableText value={data.content} />
           <CommentSection />
         </div>
