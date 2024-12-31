@@ -2,7 +2,7 @@ import { fullBlog } from "@/app/_lib/interface";
 import { client, urlFor } from "../../_lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
-import CommentSection from "@/_components/CommentSection";
+import CommentSection from "@/app/components/CommentSection";
 
 export const revalidate = 30; // revalidate at most 30 seconds
 
@@ -45,7 +45,7 @@ export default async function BlogArticle({
           height={800}
           alt="Title Image"
           priority
-          className="rounded-lg mt-8 border mx-auto w-full sm:w-[800px]" // Full width on mobile, fixed width on larger screens
+          className="rounded-md mt-8 border mx-auto w-full sm:w-[800px]" // Full width on mobile, fixed width on larger screens
         />
 
         <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
