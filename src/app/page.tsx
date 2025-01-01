@@ -31,7 +31,7 @@ export default async function Home() {
     <div className="flex items-center justify-center min-h-screen">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {data.map((post, idx) => (
-      <Card key={idx} className="w-80 flex flex-col items-center justify-between">
+      <Card key={idx} className="w-80 flex hover:scale-105 transition-all flex-col items-center justify-between">
   <Image
     src={urlFor(post.titleImage).url()}
     alt="image"
